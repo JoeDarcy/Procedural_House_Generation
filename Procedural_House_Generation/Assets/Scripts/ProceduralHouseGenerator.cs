@@ -61,7 +61,7 @@ public class ProceduralHouseGenerator : MonoBehaviour
             // Get the renderer for the house component, to get bounds, for setting spawn point
             currentRoomInstanceRenderer = currentRoomInstance.GetComponent<Renderer>();
             spawnPointOffsetY = currentRoomInstanceRenderer.bounds.center.y + currentRoomInstanceRenderer.bounds.extents.y;
-            currentRoomSpawnPointOffsetX += currentRoomInstance.transform.position.x + currentRoomInstanceRenderer.bounds.extents.x * 2.5f;
+            currentRoomSpawnPointOffsetX += currentRoomInstance.transform.position.x + currentRoomInstanceRenderer.bounds.extents.x * 3.5f;
             spawnPoint = new Vector3(startPosition.x + rooms[roomChoice].transform.position.x + currentRoomSpawnPointOffsetX, startPosition.y + rooms[roomChoice].transform.position.y + spawnPointOffsetY, startPosition.z + rooms[roomChoice].transform.position.z);
             currentRoomInstance.transform.position = spawnPoint;
 
@@ -74,7 +74,7 @@ public class ProceduralHouseGenerator : MonoBehaviour
             componentInstanceRenderer = componentInstance.GetComponent<Renderer>();
             // Add the current room's height to the spawn point offset
             spawnPointOffsetY = currentRoomInstanceRenderer.bounds.center.y + currentRoomInstanceRenderer.bounds.extents.y + componentInstanceRenderer.bounds.extents.y;
-            spawnPoint = new Vector3(currentRoomInstance.transform.position.x, roofs[0].transform.position.y + spawnPointOffsetY, roofs[0].transform.position.z);
+            spawnPoint = new Vector3(currentRoomInstance.transform.position.x, startPosition.y + roofs[0].transform.position.y + spawnPointOffsetY, startPosition.z + roofs[0].transform.position.z);
             componentInstance.transform.position = spawnPoint;
 
             // Door
@@ -85,7 +85,7 @@ public class ProceduralHouseGenerator : MonoBehaviour
             // Add the current room's height to the spawn point offset
             spawnPointOffsetY = componentInstanceRenderer.bounds.extents.y;
             spawnPointOffsetZ = currentRoomInstanceRenderer.bounds.extents.z;
-            spawnPoint = new Vector3(currentRoomInstance.transform.position.x, doors[0].transform.position.y + spawnPointOffsetY, doors[0].transform.position.z + spawnPointOffsetZ);
+            spawnPoint = new Vector3(currentRoomInstance.transform.position.x, doors[0].transform.position.y + spawnPointOffsetY, startPosition.z + doors[0].transform.position.z + spawnPointOffsetZ);
             componentInstance.transform.position = spawnPoint;
 
             // Windows
@@ -97,7 +97,7 @@ public class ProceduralHouseGenerator : MonoBehaviour
             spawnPointOffsetX = currentRoomInstanceRenderer.bounds.center.x;
             spawnPointOffsetY = currentRoomInstanceRenderer.bounds.center.y + currentRoomInstanceRenderer.bounds.extents.y * 0.8f;
             spawnPointOffsetZ = currentRoomInstanceRenderer.bounds.extents.z * 0.8f;
-            spawnPoint = new Vector3(spawnPointOffsetX, windows[0].transform.position.y + spawnPointOffsetY, windows[0].transform.position.z + spawnPointOffsetZ);
+            spawnPoint = new Vector3(spawnPointOffsetX, windows[0].transform.position.y + spawnPointOffsetY, startPosition.z + windows[0].transform.position.z + spawnPointOffsetZ);
             componentInstance.transform.position = spawnPoint;
 
             Debug.Log(currentRoomInstanceRenderer.bounds.center

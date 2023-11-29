@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 1134461082278455628, guid: 758a965bf7f714f04bd6367e131d8cda,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -44.6
+      value: -49.2
       objectReference: {fileID: 0}
     - target: {fileID: 1134461082278455628, guid: 758a965bf7f714f04bd6367e131d8cda,
         type: 3}
@@ -526,7 +526,7 @@ PrefabInstance:
     - target: {fileID: 1134461082278455628, guid: 758a965bf7f714f04bd6367e131d8cda,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.9
+      value: -49.8
       objectReference: {fileID: 0}
     - target: {fileID: 1134461082278455628, guid: 758a965bf7f714f04bd6367e131d8cda,
         type: 3}
@@ -594,7 +594,7 @@ PrefabInstance:
     - target: {fileID: 1134461082278455628, guid: 758a965bf7f714f04bd6367e131d8cda,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43
+      value: -49.5
       objectReference: {fileID: 0}
     - target: {fileID: 1134461082278455628, guid: 758a965bf7f714f04bd6367e131d8cda,
         type: 3}
@@ -900,7 +900,7 @@ PrefabInstance:
     - target: {fileID: 1134461082278455628, guid: 758a965bf7f714f04bd6367e131d8cda,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -44.3
+      value: -48.9
       objectReference: {fileID: 0}
     - target: {fileID: 1134461082278455628, guid: 758a965bf7f714f04bd6367e131d8cda,
         type: 3}
@@ -1050,6 +1050,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7429205756652125833, guid: 4f5fa8b9a51f74902821d6512bdba994,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15.303
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429205756652125833, guid: 4f5fa8b9a51f74902821d6512bdba994,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15.303
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429205756652125833, guid: 4f5fa8b9a51f74902821d6512bdba994,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 15.303
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429205756652125833, guid: 4f5fa8b9a51f74902821d6512bdba994,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1190,11 +1205,11 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 7943842679405529686}
   - {fileID: 5427780538590253333}
+  - {fileID: 292484316}
+  - {fileID: 1181900073}
+  - {fileID: 2088239013}
   - {fileID: 104994742862248155}
   - {fileID: 1086423948523174917}
   - {fileID: 6545127808411736169}
   - {fileID: 3950935608027846394}
   - {fileID: 8049701401503167397}
-  - {fileID: 292484316}
-  - {fileID: 1181900073}
-  - {fileID: 2088239013}
