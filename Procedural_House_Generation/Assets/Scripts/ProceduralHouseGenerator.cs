@@ -47,14 +47,14 @@ public class ProceduralHouseGenerator : MonoBehaviour
             currentRoomInstance = Instantiate(rooms[roomChoice]);
 
             // Rescale main room
-            if (roomChoice == 0)
+            if (roomChoice == 0 || roomChoice == 2)
             {
-                roomScale = Random.Range(1, 5);
+                roomScale = Random.Range(2, 5);
                 currentRoomInstance.transform.localScale = new Vector3(roomScale, roomScale, roomScale);
             }
             else if (roomChoice == 1)
             {
-                roomScale = Random.Range(1, 5);
+                roomScale = Random.Range(2, 5);
                 currentRoomInstance.transform.localScale = new Vector3(roomScale, roomScale * 2, roomScale);
             }
 
